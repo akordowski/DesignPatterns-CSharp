@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_StrategyPattern", "01_StrategyPattern\01_StrategyPattern.csproj", "{ECCC225C-2ECB-40B6-BA52-8F89F6417FFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECCC225C-2ECB-40B6-BA52-8F89F6417FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECCC225C-2ECB-40B6-BA52-8F89F6417FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECCC225C-2ECB-40B6-BA52-8F89F6417FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECCC225C-2ECB-40B6-BA52-8F89F6417FFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
