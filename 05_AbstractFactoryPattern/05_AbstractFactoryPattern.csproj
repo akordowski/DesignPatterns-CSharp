@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C16BD41-1764-4AFD-817D-02A6FDA52FA0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPattern</RootNamespace>
+    <AssemblyName>05_AbstractFactoryPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\ChicagoPizzaStore.cs" />
+    <Compile Include="Classes\Ingredients\Cheese\Cheese.cs" />
+    <Compile Include="Classes\Ingredients\Cheese\MozzarellaCheese.cs" />
+    <Compile Include="Classes\Ingredients\Cheese\ReggianoCheese.cs" />
+    <Compile Include="Classes\Ingredients\Clam\Clam.cs" />
+    <Compile Include="Classes\Ingredients\Clam\FreshClams.cs" />
+    <Compile Include="Classes\Ingredients\Clam\FrozenClams.cs" />
+    <Compile Include="Classes\Ingredients\Doug\Dough.cs" />
+    <Compile Include="Classes\Ingredients\Doug\ThickCrustDough.cs" />
+    <Compile Include="Classes\Ingredients\Doug\ThinCrustDough.cs" />
+    <Compile Include="Classes\Ingredients\Pepperoni\Pepperoni.cs" />
+    <Compile Include="Classes\Ingredients\Pepperoni\SlicedPepperoni.cs" />
+    <Compile Include="Classes\Ingredients\Sauce\MarinaraSauce.cs" />
+    <Compile Include="Classes\Ingredients\Sauce\PlumTomatoSauce.cs" />
+    <Compile Include="Classes\Ingredients\Sauce\Sauce.cs" />
+    <Compile Include="Classes\Ingredients\Veggie\Garlic.cs" />
+    <Compile Include="Classes\Ingredients\Veggie\Mushroom.cs" />
+    <Compile Include="Classes\Ingredients\Veggie\Onion.cs" />
+    <Compile Include="Classes\Ingredients\Veggie\RedPepper.cs" />
+    <Compile Include="Classes\Ingredients\Veggie\Veggie.cs" />
+    <Compile Include="Classes\NewYorkPizzaStore.cs" />
+    <Compile Include="Classes\Pizzas\CheesePizza.cs" />
+    <Compile Include="Classes\Pizzas\ClamPizza.cs" />
+    <Compile Include="Classes\Pizzas\PepperoniPizza.cs" />
+    <Compile Include="Classes\Pizzas\VeggiePizza.cs" />
+    <Compile Include="Factory\ChicagoPizzaIngredientFactory.cs" />
+    <Compile Include="Factory\NewYorkPizzaIngredientFactory.cs" />
+    <Compile Include="Factory\PizzaIngredientFactory.cs" />
+    <Compile Include="Pizza.cs" />
+    <Compile Include="PizzaStore.cs" />
+    <Compile Include="PizzaType.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
